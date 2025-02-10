@@ -12,12 +12,10 @@ const app = express();
 connectDB();
 
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://roxiler.arjunsharma.dev/"],
-    credentials: true,
-    optionsSuccessStatus: 200,
-  };
-  
-  app.use(cors(corsOptions));
+  origin: ["http://localhost:5173", "https://roxiler.arjunsharma.dev/"],
+};
+
+app.use(cors(corsOptions));
 
 app.use("/api/transaction", transactionRoutes)
 
@@ -26,5 +24,5 @@ const PORT = process.env.PORT || 8000;
 app.use(errorHandler)
 
 app.listen(PORT, () => {
-    console.log(`Server running on PORT - ${PORT}`)
+  console.log(`Server running on PORT - ${PORT}`)
 })
