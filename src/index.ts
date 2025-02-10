@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 const corsOptions = {
-    origin: ["http://localhost:5173", "http://roxiler.arjunsharma.dev", "*"],
+    origin: ["http://localhost:5173", "https://roxiler.arjunsharma.dev/", "*"],
     credentials: true,
     optionsSuccessStatus: 200,
   };

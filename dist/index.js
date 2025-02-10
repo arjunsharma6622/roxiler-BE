@@ -13,7 +13,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 (0, connectDB_1.connectDB)();
 const corsOptions = {
-    origin: ["http://localhost:5173", "http://roxiler.arjunsharma.dev", "*"],
+    origin: ["http://localhost:5173", "https://roxiler.arjunsharma.dev/", "*"],
     credentials: true,
     optionsSuccessStatus: 200,
 };
