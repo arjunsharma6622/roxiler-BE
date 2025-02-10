@@ -9,6 +9,8 @@ npm run dev
 ```
 Backend will run on http://localhost:8000
 <br/><br/>
+Add `MONGO_URL = your_mongo_endpoint` in `.env` file
+<br/><br/>
 Frontend Repo https://github.com/arjunsharma6622/roxiler
 
 ## API Docs
